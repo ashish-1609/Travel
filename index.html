@@ -1,225 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <header>
-        <div class="logo">
-          <a href="#"><img src="images/logo.jpg" alt="logo" /></a>
-        </div>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#hotels">Hotels</a></li>
-            <li><a href="#activites">Activities</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-image">
-          <img src="images/hero.jpg" alt="Hero image" />
-        </div>
-        <div class="hero-content">
-          <h1>Welcome to Our Travel Website</h1>
-          <p>Discover amazing destinations and book your next trip with us.</p>
-          <a href="#" class="hero-button">Book Now</a>
-        </div>
-      </section>
-      <!-- Destinations -->
-      <section id="destinations" class="destinations">
-        <h2>Popular Destinations</h2>
-        <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/destination-1.jpg" alt="" />
-            <h3>New York City</h3>
-            <p>
-              Visit the city that never sleeps and discover its iconic
-              landmarks, world-class museums, and diverse neighborhoods.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/destination-2.jpg" alt="" />
-            <h3>Paris</h3>
-            <p>
-              Experience the romance and culture of the City of Lights, from the
-              Eiffel Tower to the Louvre Museum.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/destination-3.jpg" alt="" />
-            <h3>Tokyo</h3>
-            <p>
-              Explore the vibrant city of Tokyo and immerse yourself in its
-              unique blend of ancient traditions and modern technology.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="hotels" class="destinations">
-        <h2>Featured Hotels</h2>
-        <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/hotel-1.jpg" alt="" />
-            <h3>The Ritz Carlton</h3>
-            <p>
-              Experience luxury accommodations and impeccable service at The
-              Ritz Carlton, located in the heart of the city.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/hotel-2.jpg" alt="" />
-            <h3>The Four Seasons</h3>
-            <p>
-              Relax in style at The Four Seasons, featuring breathtaking views,
-              an award-winning spa, and gourmet dining options.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/hotel-3.jpg" alt="" />
-            <h3>The Waldorf Astoria</h3>
-            <p>
-              Indulge in luxury at The Waldorf Astoria, a historic landmark
-              hotel renowned for its elegance and sophistication.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="activites" class="destinations">
-        <h2>Featured Activities</h2>
-        <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/activity-1.jpg" alt="" />
-            <h3>The Ritz Carlton</h3>
-            <p>
-              Experience luxury accommodations and impeccable service at The
-              Ritz Carlton, located in the heart of the city.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/activity-2.jpg" alt="" />
-            <h3>The Four Seasons</h3>
-            <p>
-              Relax in style at The Four Seasons, featuring breathtaking views,
-              an award-winning spa, and gourmet dining options.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/activity-3.jpg" alt="" />
-            <h3>The Waldorf Astoria</h3>
-            <p>
-              Indulge in luxury at The Waldorf Astoria, a historic landmark
-              hotel renowned for its elegance and sophistication.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section id="about" class="about">
-        <h3>About Us</h3>
-        <p>
-          Our company is dedicated to providing the best travel experiences to
-          our customers. We specialize in creating custom itineraries that cater
-          to each individual's interests and preferences.
-        </p>
-        <div class="team-members">
-          <div class="team-member">
-            <img src="images/team-member-1.jpg" alt="" />
-            <h4>John Smith</h4>
-            <p>Founder & CEO</p>
-          </div>
-          <div class="team-member">
-            <img src="images/team-member-2.jpg" alt="" />
-            <h4>Jane Doe</h4>
-            <p>Head of Operations</p>
-          </div>
-          <div class="team-member">
-            <img src="images/team-member-3.jpg" alt="" />
-            <h4>David Lee</h4>
-            <p>Marketing Director</p>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="contact">
-        <h3>Contact Us</h3>
-        <div class="contact-info">
-          <p>
-            If you have any questions or would like to book a trip, please fill
-            out the form below or contact us using the information provided.
-          </p>
-          <ul>
-            <li>
-              <i class="fas fa-map-marker-alt"></i>123 Main St, Anytown USA
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+      
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+
+        <!-- Logo (left) -->
+        <a class="navbar-brand" href="#">Cheap Flights</a>
+
+        <!-- Toggler (for mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links (right) -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li>
-              <i class="fas fa-envelope"></i
-              ><a href="mailto:info@travelcompany.com"
-                >info@travelcompany.com</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li>
-              <i class="fas fa-phone-alt"></i
-              ><a href="tel:555-123-4567">555-123-4567</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-        <form action="#" class="form">
-          <div class="form-group">
-            <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="Enter Your Name"
-            />
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="hero">
+      <div
+        style="height: 100vh; background-image: url(./images/ChatGPT\ Image\ Jun\ 26\,\ 2025\,\ 12_27_24\ AM.png); background-size: cover; background-position: center;"
+        class="position-relative w-100">
+        <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+          style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.6);">
+          <div class="container">
+            <div class="col-md-6 animate-hero-text">
+              <span style="color: #bbb;" class="text-uppercase">Your Journey Starts Here</span>
+              <!-- on small screens remove display-4 -->
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold">Cheap Flights to <span style="color: #9B5DE5; font-size: 4.3rem; font-weight: 500;">Whole World</span></h1>
+              <p style="color: #bbb;">Book budget-friendly flights to top destinations and hidden gems. No hidden fees — just low fares.</p>
+              <div class="mt-5">
+                <!-- hover background-color: white; color: black; -->
+                <a href="#packages" class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+                  style="border-radius: 30px; background-color: #9B5DE5;">Get Started</a>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter Your Email"
-            />
-          </div>
-          <div class="form-group">
-            <textarea
-              name="textarea"
-              id="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-      <footer>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://www.twitter.com/" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
         </div>
-        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+      </div>
+    </section>
+    <section class="" id="gallery">
+      <h2 class="display-4 text-center">Gallery</h2>
+      <div class="container-fluid d-flex">
+  
+        <div class="panel active"
+          style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+          <h3>Explore The World</h3>
+        </div>
+        <div class="panel"
+          style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+          <h3>Wild Forest</h3>
+        </div>
+        <div class="panel"
+          style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
+          <h3>Sunny Beach</h3>
+        </div>
+        <div class="panel"
+          style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
+          <h3>City on Winter</h3>
+        </div>
+        <div class="panel"
+          style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+          <h3>Mountains - Clouds</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section class="packages" id="packages">
+      <h2 class="display-4 text-center" style="">Explore Packages</h2>
+      <div class="container-fluid d-grid">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge">On sale</div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Best Foods</span>
+                  <span class="feature">Best Hotels</span>
+                  <span class="feature">Best Services</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">₹1,299</span>
+                    <span class="price-now">₹899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Book Now</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">Now Available</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge">Premium</div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Luxury Timepiece</div>
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Water Resistant</span>
+                  <span class="feature">5-Year Warranty</span>
+                  <span class="feature">Swiss Made</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">$1,299</span>
+                    <span class="price-now">$899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Add to Cart</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">In Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge"></div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Luxury Timepiece</div>
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Water Resistant</span>
+                  <span class="feature">5-Year Warranty</span>
+                  <span class="feature">Swiss Made</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">$1,299</span>
+                    <span class="price-now">$899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Add to Cart</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">In Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge">Premium</div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Luxury Timepiece</div>
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Water Resistant</span>
+                  <span class="feature">5-Year Warranty</span>
+                  <span class="feature">Swiss Made</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">$1,299</span>
+                    <span class="price-now">$899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Add to Cart</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">In Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge">Premium</div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Luxury Timepiece</div>
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Water Resistant</span>
+                  <span class="feature">5-Year Warranty</span>
+                  <span class="feature">Swiss Made</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">$1,299</span>
+                    <span class="price-now">$899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Add to Cart</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">In Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-badge">Premium</div>
+              <div class="product-tilt-effect">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Premium Watch">
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category">Luxury Timepiece</div>
+                <h2 class="product-title">Chrono S-Series Watch</h2>
+                <div class="product-description">
+                  <p>Precision engineering meets timeless design. Swiss movement with sapphire crystal and genuine
+                    leather
+                    band.</p>
+                </div>
+                <div class="product-features">
+                  <span class="feature">Water Resistant</span>
+                  <span class="feature">5-Year Warranty</span>
+                  <span class="feature">Swiss Made</span>
+                </div>
+                <div class="product-bottom">
+                  <div class="product-price">
+                    <span class="price-was">$1,299</span>
+                    <span class="price-now">$899</span>
+                  </div>
+                  <button class="product-button">
+                    <span class="button-text">Add to Cart</span>
+                    <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-meta">
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFD700"
+                      stroke="#FFD700" stroke-width="0.5">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                    <span class="rating-count">128 Reviews</span>
+                  </div>
+                  <div class="product-stock">In Stock</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Destinations -->
+    <section id="destinations" class="destinations">
+      <h2 class="display-4">Popular Destinations</h2>
+      <div class="destination-grid">
+        <div class="destination-item">
+          <img src="images/destination-1.jpg" alt="" />
+          <h3>New York City</h3>
+          <p>
+            Visit the city that never sleeps and discover its iconic
+            landmarks, world-class museums, and diverse neighborhoods.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/destination-2.jpg" alt="" />
+          <h3>Paris</h3>
+          <p>
+            Experience the romance and culture of the City of Lights, from the
+            Eiffel Tower to the Louvre Museum.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/destination-3.jpg" alt="" />
+          <h3>Tokyo</h3>
+          <p>
+            Explore the vibrant city of Tokyo and immerse yourself in its
+            unique blend of ancient traditions and modern technology.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="hotels" class="destinations">
+      <h2 class="display-4">Featured Hotels</h2>
+      <div class="destination-grid">
+        <div class="destination-item">
+          <img src="images/hotel-1.jpg" alt="" />
+          <h3>The Ritz Carlton</h3>
+          <p>
+            Experience luxury accommodations and impeccable service at The
+            Ritz Carlton, located in the heart of the city.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/hotel-2.jpg" alt="" />
+          <h3>The Four Seasons</h3>
+          <p>
+            Relax in style at The Four Seasons, featuring breathtaking views,
+            an award-winning spa, and gourmet dining options.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/hotel-3.jpg" alt="" />
+          <h3>The Waldorf Astoria</h3>
+          <p>
+            Indulge in luxury at The Waldorf Astoria, a historic landmark
+            hotel renowned for its elegance and sophistication.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="activites" class="destinations">
+      <h2 class="display-4">Featured Activities</h2>
+      <div class="destination-grid">
+        <div class="destination-item">
+          <img src="images/activity-1.jpg" alt="" />
+          <h3>The Ritz Carlton</h3>
+          <p>
+            Experience luxury accommodations and impeccable service at The
+            Ritz Carlton, located in the heart of the city.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/activity-2.jpg" alt="" />
+          <h3>The Four Seasons</h3>
+          <p>
+            Relax in style at The Four Seasons, featuring breathtaking views,
+            an award-winning spa, and gourmet dining options.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="images/activity-3.jpg" alt="" />
+          <h3>The Waldorf Astoria</h3>
+          <p>
+            Indulge in luxury at The Waldorf Astoria, a historic landmark
+            hotel renowned for its elegance and sophistication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="display-4">About Us</h2>
+      <p>
+        Our company is dedicated to providing the best travel experiences to
+        our customers. We specialize in creating custom itineraries that cater
+        to each individual's interests and preferences.
+      </p>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="images/team-member-1.jpg" alt="" />
+          <h4>John Smith</h4>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team-member-2.jpg" alt="" />
+          <h4>Jane Doe</h4>
+          <p>Head of Operations</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team-member-3.jpg" alt="" />
+          <h4>David Lee</h4>
+          <p>Marketing Director</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="display-4">Contact Us</h2>
+      <div class="contact-info">
+        <p>
+          If you have any questions or would like to book a trip, please fill
+          out the form below or contact us using the information provided.
+        </p>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>123 Main St, Anytown USA
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i><a href="mailto:info@travelcompany.com">info@travelcompany.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i><a href="tel:555-123-4567">555-123-4567</a>
+          </li>
+        </ul>
+      </div>
+      <form action="#" class="form">
+        <div class="form-group">
+          <input type="name" name="name" id="name" placeholder="Enter Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+        </div>
+        <div class="form-group">
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <div class="pg-footer">
+      <footer class="footer">
+        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+          <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+        </svg>
+        <div class="footer-content">
+          <div class="footer-content-column">
+            <div class="footer-logo">
+              <a class="footer-logo-link" href="#">
+                <span class="hidden-link-text">Cheap-Flights</span>
+                <h1>Cheap-Flights</h1>
+              </a>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Get Started</h2>
+              <ul id="menu-get-started" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Start</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Documentation</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Packages</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Company</h2>
+              <ul id="menu-company" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="#">News</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Legal</h2>
+              <ul id="menu-legal" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                  <a href="#">Privacy Notice</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Quick Links</h2>
+              <ul id="menu-quick-links" class="footer-menu-list">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Security</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                  <a href="#">Customers</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Reviews</a>
+                </li>
+              </ul>
+            </div>  
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+              <p class="footer-call-to-action-description"> Have a support question?</p>
+              <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+            </div>
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title"> You Call Us</h2>
+              <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="+91 6284 564 795" target="_self">+91 6284 564 795</a></p>
+            </div>
+          </div>
+          <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
+              <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
+            </svg>
+            <a class="footer-social-link linkedin" href="#" target="_blank">
+              <span class="hidden-link-text">Linkedin</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30">
+                <path class="footer-social-icon-path" d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
+              </svg>
+            </a>
+            <a class="footer-social-link twitter" href="#" target="_blank">
+              <span class="hidden-link-text">Twitter</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                <path class="footer-social-icon-path" d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 "></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self"> ©2020. | Designed By: Ashish Mishra. | All rights reserved. </a>
+            </p>
+          </div>
+        </div>
       </footer>
-    </main>
-  </body>
-  <script
-    src="https://kit.fontawesome.com/6558443b63.js"
-    crossorigin="anonymous"
-  ></script>
+    </div>
+  </main>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+
 </html>
