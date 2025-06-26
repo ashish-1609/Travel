@@ -7,8 +7,10 @@
 }
 body,
 html {
-  overflow-x: hidden;
   background-color: hsl(196.44deg 61.64% 42.94%) !important;
+}
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
 }
 .packages h2 {
   margin: 20px 0 ;
@@ -226,6 +228,7 @@ header {
   background-color: hsl(196.44deg 61.64% 42.94%);
   font-family: "Dongle-bold";
   margin: 40px 0px;
+  padding: 0 80px;
   text-align: center;
 }
 .hotels {
